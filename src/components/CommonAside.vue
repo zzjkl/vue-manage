@@ -1,7 +1,7 @@
 <template>
   <el-menu default-active="1-4-1" class="el-menu-vertical-demo" background-color="#545c71" text-color="#fff" 
   @open="handleOpen" @close="handleClose" :collapse="isCollapse">
-  <h3>{{isCollapse ? '后台':'仿制后台管理项目'}}</h3>
+  <h3 style="margin-top:25px">{{isCollapse ? '后台':'仿制后台管理项目'}}</h3>
    <el-menu-item @click="clickMenu(item)" v-for="item in noChildren" :index="item.path" :key="item.path">
     <i :class="'el-icon-'+ item.icon"></i>
     <span slot="title">{{item.lable}}</span>
@@ -26,11 +26,11 @@
 
 <style lang="less" scoped>
   .el-menu-vertical-demo:not(.el-menu--collapse) {
-    width: 200px;
+    width: 180px;
     min-height: 400px;
   }
   .el-menu{
-    height:100vh ;//与屏幕高度一致
+    height:100% ;
     border:none;
     h3{
       color:rgb(180, 167, 167);
