@@ -26,10 +26,11 @@ export default {
 
 <style>
 #app {
- height: 0;
+ height: 100vh;
 }
 html,body{
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 </style>

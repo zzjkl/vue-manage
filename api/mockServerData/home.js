@@ -23,12 +23,13 @@ export default {
       data: {
         // 饼图
         videoData: [
+          
           {
             name: '小米',
             value: 2999
           },
           {
-            name: '苹果',
+            name: "苹果",
             value: 5999
           },
           {
@@ -46,7 +47,8 @@ export default {
           {
             name: '三星',
             value: 4500
-          }
+          },
+         
         ],
         // 柱状图
         userData: [
